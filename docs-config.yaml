@@ -1,0 +1,18 @@
+port: 3000
+host: "0.0.0.0"
+uploads:
+  driver: local
+  local:
+    path: ./uploads
+frontend:
+  title: CodeX Docs
+  description: Free Docs app powered by Editor.js
+  startPage: ""
+  menu: []
+auth:
+  password: changeme          # overridden by env
+  secret: changeme            # overridden by env
+database:
+  driver: mongodb
+  mongodb:
+    uri: mongodb://localhost:27017/docs   # overridden by env
